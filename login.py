@@ -37,7 +37,6 @@ def main():
     # Seleniumの設定
     logging.info("ブラウザの起動中...")
     options = webdriver.ChromeOptions()
-    options.add_argument("--disable-gpu")
     options.add_argument("--user-data-dir=" + userDataFolder)
     driver = webdriver.Chrome(executable_path=driverPath, options=options)
     driver.implicitly_wait(30)
